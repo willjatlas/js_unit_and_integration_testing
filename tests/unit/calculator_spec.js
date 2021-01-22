@@ -57,8 +57,4 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 4);
   });
 
-
-
-  
-
 });
