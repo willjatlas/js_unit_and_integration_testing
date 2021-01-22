@@ -18,7 +18,13 @@ Calculator.prototype.multiply = function(number){
 }
 
 Calculator.prototype.divide = function(number){
-  this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
+  // Edited to check for zero multiplication, return Undefined. 
+  if(number !== 0){
+    this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
+  }
+  else{
+    this.runningTotal = "Undefined";
+  }
 }
 
 Calculator.prototype.numberClick = function(number){
